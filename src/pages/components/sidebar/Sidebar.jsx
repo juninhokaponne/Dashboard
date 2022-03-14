@@ -14,6 +14,10 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
+
+  const handleDashboard = () => {
+    window.location.href = "/";
+  }
   
   return (
     <div className="sidebar">
@@ -26,7 +30,7 @@ export const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
+          <li onClick={handleDashboard}>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
