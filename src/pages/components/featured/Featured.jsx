@@ -9,38 +9,38 @@ export const Featured = () => {
   return (
     <div className="featured">
       <div className="top">
-        <h1 className="title">Total Revenue</h1>
+        <h1 className="title">Rendimento total</h1>
         <MoreVertIcon fontSize="small" />
       </div>
       <div className="bottom">
         <div className="featuredChart">
           <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
         </div>
-        <p className="title">Total sales made today</p>
-        <p className="amount">$420</p>
+        <p className="title">Total de vendas realizadas hoje</p>
+        <p className="amount">R$1.320,59</p>
         <p className="desc">
-          Previous transactions processing. Last payments may not be included.
+          Processamento de transações anteriores. Os últimos pagamentos não podem ser incluídos.
         </p>
         <div className="summary">
           <div className="item">
-            <div className="itemTitle">Target</div>
+            <div className="itemTitle">Meta</div>
             <div className="itemResult negative">
               <KeyboardArrowDownIcon fontSize="small"/>
-              <div className="resultAmount">$12.4k</div>
+              <div className="resultAmount">R$12.4k</div>
             </div>
           </div>
           <div className="item">
-            <div className="itemTitle">Last Week</div>
+            <div className="itemTitle">Semana passada</div>
             <div className="itemResult positive">
               <KeyboardArrowUpOutlinedIcon fontSize="small"/>
-              <div className="resultAmount">$12.4k</div>
+              <div className="resultAmount">R$12.4k</div>
             </div>
           </div>
           <div className="item">
-            <div className="itemTitle">Last Month</div>
+            <div className="itemTitle">Mês Passado</div>
             <div className="itemResult positive">
               <KeyboardArrowUpOutlinedIcon fontSize="small"/>
-              <div className="resultAmount">$12.4k</div>
+              <div className="resultAmount">R$12.4k</div>
             </div>
           </div>
         </div>

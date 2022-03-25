@@ -13,13 +13,13 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="search">
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Pesquisar..." />
           <SearchOutlinedIcon />
         </div>
         <div className="items">
           <div className="item">
             <LanguageOutlinedIcon className="icon" />
-            English
+            <p>Português</p>
           </div>
           <div className="item">
             <DarkModeOutlinedIcon

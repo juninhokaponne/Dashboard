@@ -1,6 +1,7 @@
 import React from 'react'
 import './sidebar.scss'
-import DashboardIcon from '@mui/icons-material/Dashboard';import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
@@ -29,62 +30,62 @@ export const Sidebar = () => {
       <hr />
       <div className="center">
         <ul>
-          <p className="title">MAIN</p>
+          <p className="title">Início</p>
           <li onClick={handleDashboard}>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
-          <p className="title">LISTS</p>
+          <p className="title">RH - Recursos Humano</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
-              <span>Users</span>
+              <span>Usuários</span>
             </li>
           </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>Products</span>
+              <span>Produtos</span>
             </li>
           </Link>
           <li>
             <CreditCardIcon className="icon" />
-            <span>Orders</span>
+            <span>Ordens</span>
           </li>
           <li>
             <LocalShippingIcon className="icon" />
-            <span>Delivery</span>
+            <span>Lucros</span>
           </li>
-          <p className="title">USEFUL</p>
+          <p className="title">TI - Tecnologia da Informação</p>
           <li>
             <InsertChartIcon className="icon" />
-            <span>Stats</span>
+            <span>Desenvolvimento</span>
           </li>
           <li>
             <NotificationsNoneIcon className="icon" />
-            <span>Notifications</span>
+            <span>Alertas</span>
           </li>
-          <p className="title">SERVICE</p>
+          <p className="title">Financeiro</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
+            <span>Saúde Financeira</span>
           </li>
           <li>
             <PsychologyOutlinedIcon className="icon" />
-            <span>Logs</span>
+            <span>Registros de saídas</span>
           </li>
           <li>
             <SettingsApplicationsIcon className="icon" />
-            <span>Settings</span>
+            <span>Configurações</span>
           </li>
-          <p className="title">USER</p>
+          <p className="title">Usuário</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />
-            <span>Profile</span>
+            <span>Perfil</span>
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span>Sair</span>
           </li>
         </ul>
       </div>

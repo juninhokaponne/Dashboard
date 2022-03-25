@@ -15,9 +15,9 @@ export const Widget = ({ type }) => {
     switch (type) {
       case "user":
         data = {
-          title: "USERS",
+          title: "COLABORADORES",
           isMoney: false,
-          link: "See all users",
+          link: "Veja todos colaboradores",
           icon: (
             <PersonOutlineIcon
               className="icon"
@@ -31,9 +31,9 @@ export const Widget = ({ type }) => {
         break;
       case "order":
         data = {
-          title: "ORDERS",
+          title: "ORDEM",
           isMoney: false,
-          link: "View all orders",
+          link: "Veja todas ordens de pagamento",
           icon: (
             <ShoppingCartOutlinedIcon
               className="icon"
@@ -47,9 +47,9 @@ export const Widget = ({ type }) => {
         break;
       case "earning":
         data = {
-          title: "EARNINGS",
+          title: "LUCROS",
           isMoney: true,
-          link: "View net earnings",
+          link: "Veja todo lucro",
           icon: (
             <MonetizationOnOutlinedIcon
               className="icon"
@@ -60,9 +60,9 @@ export const Widget = ({ type }) => {
         break;
       case "balance":
         data = {
-          title: "BALANCE",
+          title: "SALDO",
           isMoney: true,
-          link: "See details",
+          link: "Veja saldo atual",
           icon: (
             <AccountBalanceWalletOutlinedIcon
               className="icon"
@@ -83,7 +83,7 @@ export const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-            {data.isMoney && "$"} {amount}
+            {data.isMoney && "R$"} {amount}
         </span>
         <span className="link">{data.link}</span>
       </div>
